@@ -5,3 +5,4 @@ junit.xml
 yarn-error.log
 node_modules
 dist
+template.json

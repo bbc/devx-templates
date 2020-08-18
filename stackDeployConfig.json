@@ -1,0 +1,13 @@
+{
+  "componentName": "devx-template",
+  "awsAccounts": {
+    "test": "997052946310"
+  },
+  "stacks": [
+    {
+      "name": "devx-template",
+      "templateFile": "template.json"
+    }
+  ],
+  "region": "eu-west-1"
+}
