@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "synth": "cdk synth --json --version-reporting false > template.json",
-    "deploy": "cdk deploy --require-approval never --version-reporting false",
+    "deploy": "webcore-platform-build lambda deploy-stacks --environment test --lambdaName devx-template --awsAccounts '{\"test\": \"997052946310\"}' --region eu-west-1 --stacks '[{ \"name\": \"devx-template\", \"templateFile\": \"template.json\", \"parameterFile\": \"params.json\"}]'",
     "build": "tsc",
     "bundle": "webpack --mode=production",
     "lint": "eslint 'src/**/*.{js,ts}'",
@@ -74,6 +74,7 @@
     "@aws-cdk/aws-s3": "^1.59.0",
     "@aws-cdk/core": "^1.59.0",
     "@bbc/eslint-config-devx": "https://github.com/bbc/eslint-config-devx",
+    "@bbc/webcore-platform-build": "github:bbc/fabl-platform-build#semver:^0.4.0",
     "@types/jest": "^26.0.10",
     "@types/node": "^14.6.0",
     "@types/source-map-support": "^0.5.2",
