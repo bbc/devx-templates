@@ -6,6 +6,6 @@ module.exports = {
     filename: "lambda.js",
     libraryTarget: "commonjs2",
   },
-  entry: [path.resolve(__dirname, "dist/lambda/index.js")],
+  entry: [path.resolve(__dirname, "dist/lambda/lambda.js")],
   target: "node",
 };

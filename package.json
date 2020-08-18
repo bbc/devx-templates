@@ -10,7 +10,9 @@
     "deploy": "cdk deploy --require-approval never --version-reporting false",
     "build": "tsc",
     "bundle": "webpack --mode=production",
-    "lint": "eslint 'src/**/*.{js,ts}'"
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "eslintConfig": {
     "extends": "@bbc/eslint-config-devx",
@@ -27,6 +29,7 @@
     ]
   },
   "jest": {
+    "preset": "ts-jest",
     "collectCoverageFrom": [
       "./src/**/*.{js,jsx,ts,tsx}",
       "!./**/*.d.ts",
@@ -45,7 +48,10 @@
         "lines": 85,
         "statements": 85
       }
-    }
+    },
+    "testMatch": [
+      "<rootDir>/src/**/*.test.ts"
+    ]
   },
   "husky": {
     "hooks": {
