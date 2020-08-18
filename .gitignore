@@ -1,0 +1,6 @@
+template
+build/*
+coverage
+junit.xml
+yarn-error.log
+node_modules
