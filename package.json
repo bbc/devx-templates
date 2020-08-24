@@ -6,8 +6,9 @@
   "author": "Matthew Long <matthew.long@bbc.co.uk>",
   "license": "MIT",
   "scripts": {
-    "synth": "cdk synth --json --version-reporting false",
-    "deploy": "cdk deploy --require-approval never --version-reporting false",
+    "synth": "cdk synth --json --version-reporting false > template.json",
+    "lambda:publish": "webcore-platform-build lambda publish --config stackDeployConfig.json --environment test --dontInstallDependencies",
+    "lambda:deploy": "webcore-platform-build lambda deploy --config stackDeployConfig.json --environment test --dontInstallDependencies",
     "build": "tsc",
     "bundle": "webpack --mode=production",
     "lint": "eslint 'src/**/*.{js,ts}'",
@@ -70,8 +71,11 @@
   },
   "dependencies": {
     "@aws-cdk/assert": "^1.59.0",
+    "@aws-cdk/aws-lambda": "^1.59.0",
+    "@aws-cdk/aws-s3": "^1.59.0",
     "@aws-cdk/core": "^1.59.0",
     "@bbc/eslint-config-devx": "https://github.com/bbc/eslint-config-devx",
+    "@bbc/webcore-platform-build": "github:bbc/webcore-platform-build#semver:^0.5.0",
     "@types/jest": "^26.0.10",
     "@types/node": "^14.6.0",
     "@types/source-map-support": "^0.5.2",

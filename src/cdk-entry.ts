@@ -1,5 +1,13 @@
 #!/usr/bin/env node
 import "source-map-support/register";
 import * as cdk from "@aws-cdk/core";
+import LambdaStack from "./infrastructure/lambda-stack";
 
-new cdk.App();
+const app = new cdk.App();
+
+new LambdaStack(app, {
+  env: {
+    account: "997052946310",
+    region: "eu-west-1",
+  },
+});
