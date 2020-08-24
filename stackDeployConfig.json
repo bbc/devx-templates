@@ -1,12 +1,13 @@
 {
-  "componentName": "devx-template",
+  "lambdaName": "devx-template",
   "awsAccounts": {
     "test": "997052946310"
   },
   "stacks": [
     {
       "name": "devx-template",
-      "templateFile": "template.json"
+      "templateFile": "template.json",
+      "parameterFile": "params.json"
     }
   ],
   "region": "eu-west-1"

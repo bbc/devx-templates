@@ -7,7 +7,7 @@ export default class LambdaStack extends cdk.Stack {
     super(scope, "LambdaStackId", props);
 
     const codeBucket = new s3.Bucket(this, "CodeBucket", {
-      bucketName: "code-bucket",
+      bucketName: "devx-template-lambda-code-bucket",
     });
 
     new lambda.Function(this, "LambdaFunction", {
