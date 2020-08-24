@@ -525,9 +525,9 @@
     rx "~4.1.0"
     underscore "~1.8.2"
 
-"@bbc/webcore-platform-build@github:bbc/fabl-platform-build#semver:^0.4.0":
+"@bbc/webcore-platform-build@https://github.com/bbc/webcore-platform-build":
   version "0.4.0"
-  resolved "git+ssh://git@github.com/bbc/fabl-platform-build.git#8e657e147d2448cf36ba4a39fc036e460c0c12fa"
+  resolved "https://github.com/bbc/webcore-platform-build#6eb812c46964eccdc5b14de6129c93d51d1f7789"
   dependencies:
     "@bbc/http-client" "github:bbc/bbc-http-client-node#semver:^11"
     "@octokit/rest" "^17.9.2"
@@ -884,9 +884,9 @@
     "@types/node" ">= 8"
 
 "@octokit/types@^5.0.0", "@octokit/types@^5.0.1", "@octokit/types@^5.2.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-5.4.0.tgz#25f2f8e24fec09214553168c41c06383c9d0f529"
-  integrity sha512-D/uotqF69M50OIlwMqgyIg9PuLT2daOiBAYF0P40I2ekFA2ESwwBY5dxZe/UhXdPvIbNKDzuZmQrO7rMpuFbcg==
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-5.4.1.tgz#d5d5f2b70ffc0e3f89467c3db749fa87fc3b7031"
+  integrity sha512-OlMlSySBJoJ6uozkr/i03nO5dlYQyE05vmQNZhAh9MyO4DPBP88QlwsDVLmVjIMFssvIZB6WO0ctIGMRG+xsJQ==
   dependencies:
     "@types/node" ">= 8"
 

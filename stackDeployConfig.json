@@ -1,5 +1,7 @@
 {
   "lambdaName": "devx-template",
+  "installDependencies": false,
+  "target": "dist/bundle",
   "awsAccounts": {
     "test": "997052946310"
   },
