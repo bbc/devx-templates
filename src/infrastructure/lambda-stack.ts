@@ -12,7 +12,7 @@ export default class LambdaStack extends cdk.Stack {
     });
 
     new lambda.Function(this, "LambdaFunction", {
-      handler: "handler",
+      handler: "dist/bundle/lambda.handler",
       runtime: lambda.Runtime.NODEJS_12_X,
       code: lambda.Code.fromAsset(
         path.join(__dirname, "..", "..", "dist", "bundle")
