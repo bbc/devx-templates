@@ -8,7 +8,8 @@
   "scripts": {
     "synth": "cdk synth --json --version-reporting false > template.json",
     "lambda:publish": "webcore-platform-build lambda publish --config stackDeployConfig.json --environment test --dontInstallDependencies",
-    "lambda:deploy": "webcore-platform-build lambda deploy --config stackDeployConfig.json --environment test --dontInstallDependencies",
+    "lambda:deploy:test": "webcore-platform-build lambda deploy --config stackDeployConfig.json --environment test --dontInstallDependencies",
+    "lambda:deploy:live": "webcore-platform-build lambda deploy --config stackDeployConfig.json --environment live --dontInstallDependencies",
     "build": "tsc",
     "bundle": "webpack --mode=production",
     "lint": "eslint 'src/**/*.{js,ts}'",

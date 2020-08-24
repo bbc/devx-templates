@@ -10,4 +10,13 @@ new LambdaStack(app, {
     account: "997052946310",
     region: "eu-west-1",
   },
+  stackName: "DevxTemplateStackTest",
+});
+
+new LambdaStack(app, {
+  env: {
+    account: "561847100151",
+    region: "eu-west-1",
+  },
+  stackName: "DevxTemplateStackLive",
 });
