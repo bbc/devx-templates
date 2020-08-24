@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "synth": "cdk synth --json --version-reporting false > template.json",
-    "deploy": "webcore-platform-build lambda deploy-stacks --environment test --lambdaName devx-template --awsAccounts '{\"test\": \"997052946310\"}' --region eu-west-1 --stacks '[{ \"name\": \"devx-template\", \"templateFile\": \"template.json\", \"parameterFile\": \"params.json\"}]'",
+    "lambda:publish": "webcore-platform-build lambda publish --config stackDeployConfig.json --environment test --dontInstallDependencies",
     "build": "tsc",
     "bundle": "webpack --mode=production",
     "lint": "eslint 'src/**/*.{js,ts}'",
