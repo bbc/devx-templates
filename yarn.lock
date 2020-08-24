@@ -525,9 +525,9 @@
     rx "~4.1.0"
     underscore "~1.8.2"
 
-"@bbc/webcore-platform-build@https://github.com/bbc/webcore-platform-build":
-  version "0.4.0"
-  resolved "https://github.com/bbc/webcore-platform-build#6eb812c46964eccdc5b14de6129c93d51d1f7789"
+"@bbc/webcore-platform-build@github:bbc/webcore-platform-build#semver:^0.5.0":
+  version "0.5.0"
+  resolved "git+ssh://git@github.com/bbc/webcore-platform-build.git#a53e1526ef51e751d7c14f260f49991857e37895"
   dependencies:
     "@bbc/http-client" "github:bbc/bbc-http-client-node#semver:^11"
     "@octokit/rest" "^17.9.2"
