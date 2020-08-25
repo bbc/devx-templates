@@ -3,7 +3,8 @@
   "installDependencies": false,
   "target": "dist/bundle",
   "awsAccounts": {
-    "test": "997052946310"
+    "test": "997052946310",
+    "live": "561847100151"
   },
   "stacks": [
     {
