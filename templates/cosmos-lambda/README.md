@@ -15,7 +15,7 @@ YARN
    * `src/cdk-entry.js`
    * `src/infrastructure/lambda-stack.ts`
 1. Run `yarn install`
-1. Authenticate the command line with the test AWS account
+1. Authenticate the command line with the test AWS account. You can use [cli-wormhole](https://github.com/bbc/cli-wormhole) for this.
 1. Run `yarn stack:deploy:test`
 1. Authenticate the command line with the live AWS account
 1. Run `yarn stack:deploy:live`
