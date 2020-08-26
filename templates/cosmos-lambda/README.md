@@ -30,7 +30,7 @@ Your project is now bootstrapped. Going forward; any changes made to the infrast
 ## Usage Guide
 
 - `yarn install`: Installs required dependencies
-- `yarn stack:deploy:test` and `yarn stack:deploy:live`: This will synthesize the AWS CloudFormation templates from the CDK and deploy them to each environment. Note: Your command line will to be authenticated against the appropriate AWS account.
+- `yarn stack:deploy:test` and `yarn stack:deploy:live`: This will synthesize the AWS CloudFormation templates from the CDK and deploy them to each environment. Note: Your command line will need to be authenticated against the appropriate AWS account.
 - `yarn test`: Runs unit tests against the Lambda code
 - `yarn lint`: Runs linting tests against the Lambda code
 - `yarn build`: Runs Typescript compiler
